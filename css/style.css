@@ -1,0 +1,122 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap'); /* Almendra */
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap'); /* Bokor */
+
+
+/* Header styles */
+
+h1 {
+	font-family: Bokor, Times, serif;
+	font-size: 42px;
+	color: #d9af4e;
+}
+
+h2 {
+	font-family: Bokor, Times, serif;
+	font-size: 36px; 
+	color: #d9af4e;
+}
+
+h3 {
+	font-family: Bokor, Times, serif;
+	font-size: 26px;
+	color: #d9af4e;
+}
+
+/* Text styles */
+
+.white_text {
+	font-family: Almendra, Times, serif;
+	font-size: 16px;
+	text-shadow: 0px 0px 3px white;
+	color: white;
+}
+
+/* Div styles */
+
+.sidebar {
+	background-color: #302f2c;
+	color: white;
+	width: 15%;
+	height: 100%; /* Full height */
+	left: 0;
+	top: 0;
+	position: fixed; /* Make it stick, even on scroll */
+	overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+	
+.sidebar img {
+    width: 90%; /* Resize the image to 90% of the sidebar's width */
+    height: auto; /* This keeps the image's aspect ratio intact */
+}
+
+.banner_image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0px;
+	margin-left: 15%;
+	width: 100%;
+	height: 35%;
+	background-color: black;
+}
+
+.banner_image img {
+	max-height: 100%;
+	max-width: 100%;
+	object-fit: fill;
+}
+
+.footer {
+	width: 100%;
+	height: 15%;
+}
+
+.main_body {
+	padding-left: 15%;
+	padding-top: 35%;
+	display: flex;
+}
+
+/* Table styles */
+
+td {
+	border: 4px groove black;
+}
+
+.main_table {
+	border: 4px groove black;
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	background-image: linear-gradient(180deg, #E2DAD0FF 0%, #8A8FB3FF 100%); /* Calculated with help of https://colorgradient.dev/ */
+	font-size: 20px;
+}
+
+.table_header_row {
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	background-image: linear-gradient(180deg, #E2DAD0FF 0%, #684932FF 100%); /* Calculated with help of https://colorgradient.dev/ */
+	border: 4px groove black;
+}
+
+/* .main_table_rows {
+	background-size: 100% 100%;
+	background-position: 0px 0px;
+	background-image: linear-gradient(180deg, #E2DAD0FF 0%, #8A8FB3FF 100%); Calculated with help of https://colorgradient.dev/
+	font-size: 20px;
+} */
+
+/* Miscellaneous */
+
+body {
+	background-image: url("media/bgimage.jpg");
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Almendra, Times, serif;
+	font-size: 16px;
+	text-shadow: 0px 0px 3px white;
+	color: black;
+}
+
