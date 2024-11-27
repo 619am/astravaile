@@ -190,3 +190,7 @@ html {
 	outline: none;
 	font-size: 14px;
 }
+
+  .active, .menu_button:hover {
+  background-color: #5e5d5a;
+  }
