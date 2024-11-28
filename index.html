@@ -24,12 +24,10 @@
 			<img src="media/astravaile.gif" alt="A graphic header for Astravaile. Contains blue text and a globe.">
 		</a>
 		
-		<button type="button" class="collapsible_menu"><p class="white_text">World</p></button>
+		<button type="button" class="collapsible_menu">World</button>
 		
 			<div class="collapsible_menu_content">
-				<a href="pantheon.html">
-				<button class="menu_button"><p class="white_text">Pantheon</p></button>
-			</a>
+				<button id="pantheon" class="menu_button" >Pantheon</button>
 			</div> 
 		
 	</div>
@@ -81,6 +79,12 @@
 			} 
 		  });
 		}
+		</script>
+
+		<script>
+			document.getElementById("pantheon").onclick = function () {
+				location.href = "pantheon.html";
+			};
 		</script>
 
 	</body>
