@@ -32,11 +32,38 @@ h3 {
 	color: white;
 }
 
+a:link {
+	color: #64c0d6;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #64c0d6;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #a6bb7d;
+	text-decoration: underline;
+}
+
 /* Image styles */
 
-.persona {
-	float: right;
-	max-width: 50%;
+.sidebar img {
+    width: 100%; /* Resize the image to 90% of the sidebar's width */
+    height: auto; /* This keeps the image's aspect ratio intact */
+}
+
+.banner_image img {
+	height: 120px;
+	width: auto;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.main_body > div > img {
+	max-width: 100%;
 	height: auto;
 }
 
@@ -52,11 +79,6 @@ h3 {
 	position: fixed; /* Make it stick, even on scroll */
 	overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
-	
-.sidebar img {
-    width: 100%; /* Resize the image to 90% of the sidebar's width */
-    height: auto; /* This keeps the image's aspect ratio intact */
-}
 
 .banner_image {
 	position: fixed;
@@ -68,22 +90,13 @@ h3 {
 	background-color: black;
 }
 
-.banner_image img {
-	height: 120px;
-	width: auto;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-}
-
 .main_body {
 	margin-left: 15%;
 	margin-top: 120px;
 	width: 85%;
-	height: 100%;
+	height: auto;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	justify-content: center;
 }
 
@@ -93,7 +106,6 @@ h3 {
     padding: 10px;
     margin: 5px;
     font-size: 16px;
-	height: auto;
 	border-style: outset;
 	border-color: #adadad;
 }
@@ -155,21 +167,49 @@ html {
 
 /* Collapsible menus */
 
-.collapsible_menu {
+.collapsible_world_menu {
 	background-color: #302f2c;
 	color: #ffffff;
 	cursor: pointer;
 	padding: 5px;
 	width: 100%;
 	border: none;
-	text-align: left;
+	text-align: center;
 	outline: none;
-	font-size: 15px;
+	font-size: 17px;
+	font-family: Almendra, Times, serif;
+	text-shadow: 0px 0px 3px black;
+}  
+
+.collapsible_characters_menu {
+	background-color: #302f2c;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 17px;
+	font-family: Almendra, Times, serif;
+	text-shadow: 0px 0px 3px black;
+}  
+
+.collapsible_media_menu {
+	background-color: #302f2c;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-size: 17px;
 	font-family: Almendra, Times, serif;
 	text-shadow: 0px 0px 3px black;
 }  
   
-  .active, .collapsible_menu:hover {
+  .active, .collapsible_world_menu:hover, .collapsible_characters_menu:hover, .collapsible_media_menu:hover {
   background-color: #5e5d5a;
 }
 
@@ -188,7 +228,7 @@ html {
 	padding: 5px;
 	width: 100%;
 	border: none;
-	text-align: left;
+	text-align: center;
 	outline: none;
 	font-size: 14px;
 	font-family: Almendra, Times, serif;
