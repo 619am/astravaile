@@ -156,15 +156,17 @@ html {
 /* Collapsible menus */
 
 .collapsible_menu {
-  background-color: #302f2c;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 5px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+	background-color: #302f2c;
+	color: #ffffff;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-family: Almendra, Times, serif;
+	text-shadow: 0px 0px 3px black;
 }  
   
   .active, .collapsible_menu:hover {
@@ -189,6 +191,8 @@ html {
 	text-align: left;
 	outline: none;
 	font-size: 14px;
+	font-family: Almendra, Times, serif;
+	text-shadow: 0px 0px 3px black;
 }
 
   .active, .menu_button:hover {
