@@ -12,11 +12,15 @@
 		
 		<meta charset="UTF-8">
 		
-		 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		 
+		<script type="text/javascript" src="sidebar_functions.js" defer></script> 
 		
 	</head>
 	
 	<body>
+	
+	<!-- v v SIDEBAR MENU CODE v v -->
 	
 	<div class="sidebar">
 		
@@ -24,11 +28,60 @@
 			<img src="media/astravaile.gif" alt="A graphic header for Astravaile. Contains blue text and a globe.">
 		</a>
 		
-		<button type="button" class="collapsible_menu">World</button>
+		<!-- World Menu Button -->
+		<button class="collapsible_world_menu">World</button>
+
+		<!-- World Content -->
+		<div class="collapsible_menu_content">
+			<button id="map" class="menu_button">World Map</button>
+			<button id="nations" class="menu_button">Nations</button>
+			<button id="pantheon" class="menu_button">Pantheon</button>
+		</div>
 		
-			<div class="collapsible_menu_content">
-				<button id="pantheon" class="menu_button" >Pantheon</button>
-			</div> 
+		<!-- Characters Menu Button -->
+		<button class="collapsible_characters_menu">Characters</button>
+
+		<!-- Characters Content -->
+		<div class="collapsible_menu_content">
+			<button id="blain" class="menu_button">Blain</button>
+			<button id="eldine" class="menu_button">Eldine</button>
+			<button id="koda" class="menu_button">Koda</button>
+			<button id="zaku" class="menu_button">Zaku</button>
+			<button id="npcs" class="menu_button">NPCs</button>
+		</div>
+		
+		<!-- Media Menu Button -->
+		<button class="collapsible_media_menu">Media</button>
+
+		<!-- Media Content -->
+		<div class="collapsible_menu_content">
+			<button id="gallery" class="menu_button">Gallery</button>
+			<button id="playlists" class="menu_button">Playlists</button>
+			<button id="guestbook" class="menu_button">Guestbook</button>
+		</div>
+
+		<!-- Call the function needed to expand the menu upon clicking the menu buttons -->
+
+		<script>
+			document.querySelector(".collapsible_world_menu").onclick = function () {
+				expand_world_menu();
+				setupMenuButtons();
+			};
+		</script>
+		
+		<script>
+			document.querySelector(".collapsible_characters_menu").onclick = function () {
+				expand_characters_menu();
+				setupMenuButtons();
+			};
+		</script>
+		
+		<script>
+			document.querySelector(".collapsible_media_menu").onclick = function () {
+				expand_media_menu();
+				setupMenuButtons();
+			};
+		</script>
 		
 	</div>
 	
@@ -199,28 +252,5 @@
 		</div>
 		
 	</div>
-	
-	<script>
-		var coll = document.getElementsByClassName("collapsible_menu");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-		  coll[i].addEventListener("click", function() {
-			this.classList.toggle("active");
-			var content = this.nextElementSibling;
-			if (content.style.maxHeight){
-			  content.style.maxHeight = null;
-			} else {
-			  content.style.maxHeight = content.scrollHeight + "px";
-			} 
-		  });
-		}
-		</script>
-	
-		<script>
-			document.getElementById("pantheon").onclick = function () {
-				location.href = "pantheon.html";
-			};
-		</script>
-	
+		
 	</body>
