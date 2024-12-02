@@ -60,7 +60,7 @@ function setupMenuButtons() {
 		eldine: "under_construction.html",
 		koda: "under_construction.html",
 		zaku: "under_construction.html",
-		npcs: "under_construction.html",
+		npcs: "npcs.html",
 		gallery: "under_construction.html",
 		playlists: "under_construction.html",
 		guestbook: "guestbook.html"
