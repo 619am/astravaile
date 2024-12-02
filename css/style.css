@@ -75,6 +75,14 @@ a:hover {
 
 /* Div styles */
 
+.guestbook_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+	gap: 10px;
+}
+
 .sidebar {
 	background-color: #302f2c;
 	color: white;
@@ -252,6 +260,13 @@ html {
 	text-shadow: 0px 0px 3px black;
 }
 
-  .active, .menu_button:hover {
+.active, .menu_button:hover {
   background-color: #5e5d5a;
-  }
+}
+  
+textarea {
+  width: 100%;
+  height: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+}
