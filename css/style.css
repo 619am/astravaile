@@ -154,12 +154,12 @@ input:focus, textarea:focus {
 }
 
 .soundboard {
-	width: auto;
+	width: 90%;
 	height: 100%;
 	background-color: #000000;
 	color: #ffffff;
     padding: 10px;
-    margin: 5px;
+    margin: auto;
     font-size: 16px;
 	border-style: outset;
 	border-color: #adadad;
