@@ -38,9 +38,10 @@ h4 {
 	color: white;
 }
 
-a:link {
+a {
 	color: #64c0d6;
 	text-decoration: underline;
+	transition: color 0.5s ease-out;
 }
 
 a:visited {
@@ -80,6 +81,7 @@ input:focus, textarea:focus {
 .soundboard img {
 	height: 25%;
 	width: 25%;
+	transition: width 2s, height 2s;
 }
 
 .soundboard img:hover {
