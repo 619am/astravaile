@@ -17,13 +17,13 @@
 		<script type="text/javascript" src="sidebar_functions.js" defer></script> 
 		
 	</head>
-
+	
 	<body>
 	
 	<!-- v v SIDEBAR MENU CODE v v -->
 	
 	<div class="sidebar">
-		
+	
 		<a href="index.html">
 			<img src="media/astravaile.gif" alt="A graphic header for Astravaile. Contains blue text and a globe.">
 		</a>
@@ -82,55 +82,44 @@
 				setupMenuButtons();
 			};
 		</script>
-		
 	</div>
 	
 	<div class="banner_image">
 		<img src="media/banner_image.png" alt="A piece of art with a black background, featuring a robotic hand holding up a sign that says 'Divinity is Tyranny.'">
 	</div>
-
-	<div class="main_body" style="flex-wrap:nowrap;">
 	
-			<div>
-		
-			<h2 style="font-size:24px;">Introduction</h2>
+	<div class="main_body">
+	
+		<div style="height:100%;">
+			<h2>Sign my guestbook? :)</h2>
 			
-			<p><em>Astravaile</em> is the world I have crafted for my Dungeons and Dragons campaigns: <em>The King Tide Festival</em> (2023-2024) and <em>The Eclipse of Faith</em> (ongoing). Hopefully this webpage tells you all you need to know about the universe and the campaigns involved.</p> 
+			<form class="guestbook_form">
+				
+				<label for="Name">Name</label>
+				<input type="text" id="Name">
+				
+				<label for="Email">Email</label>
+				<input type="email" id="Email">
+				
+				<label for="Post_Date">What day you like this to post?</label>
+				<input type="date" id="Post_Date">
+				
+				<label for="Post_Time">What time would you like this to post?</label>
+				<input type="time" id="Post_Time">
+				
+				<label for="Comment">Leave your comment!</label>
+				<textarea id="Comment">Hey Eli...</textarea> 
+				
+				<input type="submit" value="Submit">
 			
-			<video controls>
-				<source src="media/weapon_of_god.mp4" type="video/mp4">
-				<source src="media/weapon_of_god.ogg" type="video/ogg">
-				Your browser does not support the video tag.
-			</video>
-		
-		</div>
-		
-		<div>
-		
-			<h2 style="font-size:24px;">About the DM</h2>
+				<input type="reset" value="Reset">
 			
-			<img style="float:right;max-width:35%;height:auto;" src="media/maestro.png" alt="Digital art of Eli's online persona.">
-			
-			<p>Hi there! My name is Eli (he/him). I'm happy you could join me in my little corner of the internet. I get up to a lot of things--I'd link them, but most of my projects go unfinished. I enjoy roleplaying, drawing, writing, organization, hiking, and listening to music. My favorite genre is rock, though I'll listen to just about anything.</p>
-			
-			<div class="change_log">
-				
-				<h2 style="color:black;margin:0;">CHANGE LOG</h2>
-				
-				<hr>
-				
-				<p>12/2/2024: Added change log, <a href="guestbook.html">guestbook</a> page, and some minor quality of life fixes.</p>
-				
-				<hr class="change_log_dividers">
-				
-				<p>11/27/2024: Lots of work! Revamped website layout and design, made the site mobile-friendly (for the most part, it doesn't look the best!), added sidebar and navigation menu, added an under construction page, and added pages <a href="map.html">World Map</a> and <a href="pantheon.html">Pantheon</a>.</p>
-				
-			</div>
+			</form>
 			
 		</div>
-		
+	
 	</div>
-
+	
 	</body>
-
+	
 </html>

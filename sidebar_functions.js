@@ -63,7 +63,7 @@ function setupMenuButtons() {
 		npcs: "under_construction.html",
 		gallery: "under_construction.html",
 		playlists: "under_construction.html",
-		guestbook: "under_construction.html"
+		guestbook: "guestbook.html"
     };
 
     for (const [id, url] of Object.entries(buttonMappings)) {
